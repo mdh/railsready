@@ -1,1 +1,91 @@
-My GitHub Page
+<html>
+<head>
+  <title>Rails Ready</title>
+  
+  <style>
+    body {
+      background: #bbb;
+      font-family: monaco;
+      font-size: 16px;
+      color: black;
+    }
+    .wrapper {
+      width: 940px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+    h1 {
+      padding-bottom: 10px;
+      border-bottom: 2px solid #000;
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    .content_bubble {
+      font-size: 14px;
+      background: #ccc;
+      width: 98%;
+      margin: 10px auto;
+      padding: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    .terminal_code {
+      font-size: 14px;
+      background: black;
+      width: 98%;
+      margin: 10px auto;
+      padding: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      border: 1px solid black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="http://github.com/joshfng/railsready">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets1.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_darkblue_121621.png&path=" alt="Fork me on GitHub">
+  </a>
+  
+  <div class="wrapper">
+    <h1>Rails Ready</h1>
+    
+    <h2>Ruby and Ruby on Rails setup script for Linux systems</h2>
+    
+    <div class="terminal_code">
+      wget --no-check-certificate https://github.com/joshfng/railsready/raw/master/railsready.sh && bash railsready.sh
+    </div>
+    
+    <div class="content_bubble">
+      <p>Distros supported:</p>
+      <ul>
+        <li>Ubuntu 10.04 and 10.10</li>
+        <li>CentOS 5.5 (utilizes the Fedora EPEL repo)</li>
+      </ul>
+    </div>
+    
+    <div class="content_bubble">
+      <p>What this gives you:</p>
+      <ul>
+        <li>An updated system</li>
+        <li>Ruby 1.9.2 latest patch level (installed to /usr/local/bin/ruby) or RVM running 1.9.2 latest patch level</li>
+        <li>Imagemagick</li>
+        <li>All libs needed to run Rails (sqlite, mysql, etc)</li>
+        <li>Bundler, Passenger, and Rails gems</li>
+        <li>Git</li>
+      </ul>
+    </div>
+    
+    <div class="content_bubble">
+      <p>Rails Ready supports a "plugin" type system. The distro is detected and a corresponding "recipe" file is pulled down to run the distro specific setup steps. Check the recipes directory to see if your distro is supported. If you would like to add support for a system fork the repo, write a recipe, and submit a pull request. Take a look at recipes/ubuntu.sh for an idea of what to model your recipe after.</p>
+    </div>
+    
+  </div>
+</body>
+</html>
