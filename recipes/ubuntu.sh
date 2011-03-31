@@ -52,9 +52,9 @@ sudo $pm -y install libsqlite3-0 sqlite3 libsqlite3-dev libmysqlclient16-dev lib
 echo "==> done..."
 
 # Install imagemagick
-echo -e "\n=> Installing imagemagick (this may take awhile)..."
-sudo $pm -y install imagemagick libmagick9-dev >> $log_file 2>&1
-echo "==> done..."
+# echo -e "\n=> Installing imagemagick (this may take awhile)..."
+# sudo $pm -y install imagemagick libmagick9-dev >> $log_file 2>&1
+# echo "==> done..."
 
 # Install git-core
 echo -e "\n=> Installing git..."
