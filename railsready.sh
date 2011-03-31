@@ -114,6 +114,12 @@ if [ $whichRuby -eq 1 ] ; then
    && make >> $log_file 2>&1 \
     && sudo make install >> $log_file 2>&1
   echo "==> done..."
+
+  # Update rubygems
+  echo -e "\n=> Updating RubyGems to latest \n"
+  sudo gem update --system
+  echo "==> done..."
+
 elif [ $whichRuby -eq 2 ] ; then
   #thanks wayneeseguin :)
   echo -e "\n=> Installing RVM the Ruby enVironment Manager http://rvm.beginrescueend.com/rvm/install/ \n"
